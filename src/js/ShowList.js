@@ -1,4 +1,7 @@
-var ShowList = React.createClass({
+var React = require('react')
+var ShowList = require('./ShowList'); 
+
+module.exports  = React.createClass({
   getDefaultProps: function(){
     return {
       names: []
@@ -9,7 +12,7 @@ var ShowList = React.createClass({
       return <li> {friend} </li>;
     });
     return (
-      <div>
+      <div className="ShowList">
         <h3> Friends </h3>
         <ul>
           {listItems}
@@ -18,5 +21,3 @@ var ShowList = React.createClass({
     )
   }
 });
-
-//module.exports = ShowList;

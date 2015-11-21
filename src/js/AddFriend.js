@@ -1,7 +1,9 @@
-var AddFriend = React.createClass({
+var React = require('react')
+
+module.exports = React.createClass({
   getInitialState: function(){
     return {
-      newFriend: ''
+      newFriend: ' '
     }
   },
   propTypes: {
@@ -20,11 +22,10 @@ var AddFriend = React.createClass({
   },
   render: function(){
     return (
-      <div>
+      <div className="AddFriend">
         <input type="text" value={this.state.newFriend} onChange={this.updateNewFriend} />
         <button onClick={this.handleAddNew}> Add Friend </button>
       </div>
     );
   }
 });
-//module.exports = AddFriend;

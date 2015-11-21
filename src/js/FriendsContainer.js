@@ -1,5 +1,8 @@
+var React = require('react')
+var AddFriend = require('./AddFriend');
+var ShowList = require('./ShowList')
 
-var FriendsContainer = React.createClass({
+module.exports = React.createClass({
   getInitialState: function(){
     return {
       name: 'Tyler McGinnis',
@@ -13,7 +16,7 @@ var FriendsContainer = React.createClass({
   },
   render: function(){
     return (
-      <div>
+      <div className="FriendsContainer">
         <h3> Name: {this.state.name} </h3>
         <AddFriend addNew={this.addFriend} />
         <ShowList names={this.state.friends} />
@@ -21,4 +24,3 @@ var FriendsContainer = React.createClass({
     )
   }
 });
-//module.exports = FriendsContainer;
