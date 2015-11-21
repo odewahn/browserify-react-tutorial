@@ -1,5 +1,5 @@
 var React = require('react')
-var FriendsContainer = require('./FriendsContainer')
+var FriendsContainer = require('./components/FriendsContainer')
 
 React.render(
   <FriendsContainer />,
