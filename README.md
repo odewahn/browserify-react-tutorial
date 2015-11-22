@@ -5,7 +5,7 @@ It's organized like this:
 ```
 - src                           // all source files
   - index.html                     // the main index file
-  - js
+  - jsx
     - App.jsx                      // the main jsx app
     - components                   // Directory containing individual components
       - AddFriend.jsx

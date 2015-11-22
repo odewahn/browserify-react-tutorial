@@ -13,7 +13,7 @@ module.exports  = React.createClass({
     });
     return (
       <div className="ShowList">
-        <h3> Your Friends </h3>
+        <h3> Friends </h3>
         <ul>
           {listItems}
         </ul>
