@@ -2,6 +2,7 @@ This project is an exercise to build a browserifiy/commonJS workflow for [Tyler 
 
 It's organized like this:
 
+```
 - src
   - App.js  -- the main App file
   - components
@@ -11,7 +12,7 @@ It's organized like this:
 - public
   - bundle.js  -- the browserified version of the app
   - index.html -- the index file copied over from `src`
-
+```
 
 To get started:
 
