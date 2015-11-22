@@ -6,9 +6,9 @@ It's organized like this:
 - src
   - App.js  -- the main App file
   - components
-   - AddFriend.js
-   - FriendsContainer.js
-   - ShowList.js
+    - AddFriend.js
+    - FriendsContainer.js
+    - ShowList.js
 - public
   - bundle.js  -- the browserified version of the app
   - index.html -- the index file copied over from `src`
