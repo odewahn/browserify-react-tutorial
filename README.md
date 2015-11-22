@@ -41,5 +41,6 @@ npm install --save-dev watchify;
 npm install --save-dev reactify;
 npm install --save-dev gulp-streamify;
 npm install --save-dev gulp-uglify;
-npm install --save-dev react;
+npm install --save-dev gulp;
+npm install --save react;
 ```
