@@ -14,7 +14,7 @@ var path = {
   DEST: 'public',
   DEST_BUILD: 'public/build',
   DEST_SRC: 'public',
-  ENTRY_POINT: './src/js/App.js'
+  ENTRY_POINT: './src/js/App.jsx'
 };
 
 gulp.task('copy', function(){
@@ -27,6 +27,7 @@ gulp.task('watch', function() {
 
   var watcher  = watchify(browserify({
     entries: [path.ENTRY_POINT],
+    extensions: ['.jsx'],
     transform: [reactify],
     debug: true,
     cache: {}, packageCache: {}, fullPaths: true

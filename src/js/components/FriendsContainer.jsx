@@ -17,7 +17,7 @@ module.exports = React.createClass({
   render: function(){
     return (
       <div className="FriendsContainer">
-        <h3> Name: {this.state.name} </h3>
+        <h3> Your Name: {this.state.name} </h3>
         <AddFriend addNew={this.addFriend} />
         <ShowList names={this.state.friends} />
       </div>

@@ -1,5 +1,5 @@
 var React = require('react')
-var ShowList = require('./ShowList'); 
+var ShowList = require('./ShowList');
 
 module.exports  = React.createClass({
   getDefaultProps: function(){
@@ -13,7 +13,7 @@ module.exports  = React.createClass({
     });
     return (
       <div className="ShowList">
-        <h3> Friends </h3>
+        <h3> Your Friends </h3>
         <ul>
           {listItems}
         </ul>
