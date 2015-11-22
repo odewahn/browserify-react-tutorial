@@ -1,11 +1,14 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
+//var uglify = require('gulp-uglify');
 //var htmlreplace = require('gulp-html-replace');
+//var streamify = require('gulp-streamify');
+
+var gulp = require('gulp');
+var connect = require('gulp-connect');
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var reactify = require('reactify');
-var streamify = require('gulp-streamify');
+
 
 var path = {
   HTML: 'src/index.html',
@@ -20,6 +23,12 @@ var path = {
 gulp.task('copy', function(){
   gulp.src(path.HTML)
     .pipe(gulp.dest(path.DEST));
+});
+
+gulp.task('server', function() {
+  connect.server({
+    root: ['.','public']
+  });
 });
 
 gulp.task('watch', function() {
@@ -43,3 +52,5 @@ gulp.task('watch', function() {
     .pipe(source(path.OUT))
     .pipe(gulp.dest(path.DEST_SRC));
 });
+
+gulp.task('default', ['copy', 'server', 'watch'])
