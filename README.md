@@ -20,12 +20,10 @@ To get started:
 
 * Download the repo
 * Run `npm install`
-* Run `gulp watch`
-* Start a web server.  There is probably a way to do this with Gulp, as well, but I'm using `python -m SimpleHTTPServer`
+* Run `gulp`
+* Open a browser to `localhost:8080`
 
 The js in the `public` directory is rebuilt whenever you change the source files in the `src` directory..
-
-
 
 
 ## Setting up a project for the *very* first time
@@ -42,5 +40,6 @@ npm install --save-dev reactify;
 npm install --save-dev gulp-streamify;
 npm install --save-dev gulp-uglify;
 npm install --save-dev gulp;
+npm install --save-dev gulp-connect;
 npm install --save react;
 ```
